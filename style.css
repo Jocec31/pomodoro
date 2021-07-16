@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+*,
+::after,
+::before {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  height: 100vh;
+  background-image: radial-gradient(circle at center center,
+      transparent,
+      rgb(255, 255, 255)),
+    linear-gradient(309deg,
+      rgba(90, 90, 90, 0.05) 0%,
+      rgba(90, 90, 90, 0.05) 50%,
+      rgba(206, 206, 206, 0.05) 50%,
+      rgba(206, 206, 206, 0.05) 100%),
+    linear-gradient(39deg,
+      rgba(13, 13, 13, 0.05) 0%,
+      rgba(13, 13, 13, 0.05) 50%,
+      rgba(189, 189, 189, 0.05) 50%,
+      rgba(189, 189, 189, 0.05) 100%),
+    linear-gradient(144deg,
+      rgba(249, 249, 249, 0.05) 0%,
+      rgba(249, 249, 249, 0.05) 50%,
+      rgba(111, 111, 111, 0.05) 50%,
+      rgba(111, 111, 111, 0.05) 100%),
+    linear-gradient(166deg,
+      rgba(231, 231, 231, 0.05) 0%,
+      rgba(231, 231, 231, 0.05) 50%,
+      rgba(220, 220, 220, 0.05) 50%,
+      rgba(220, 220, 220, 0.05) 100%),
+    linear-gradient(212deg,
+      rgba(80, 80, 80, 0.05) 0%,
+      rgba(80, 80, 80, 0.05) 50%,
+      rgba(243, 243, 243, 0.05) 50%,
+      rgba(243, 243, 243, 0.05) 100%),
+    radial-gradient(circle at center center,
+      hsl(107, 19%, 100%),
+      hsl(107, 19%, 100%));
+}
+
+/* TITRE */
+h1 {
+  font-family: 'Monoton';
+  text-align: center;
+  margin: 1.5em 0;
+  font-size: 2.5rem;
+  color: #333;
+  font-style: italic;
+  color: crimson;
+}
+
+h3 {
+  text-align: center;
+}
+
+/* GLOBAUX */
+hr {
+  border: 1px solid #333;
+  display: block;
+  margin: .5em;
+  width: 90%;
+}
+
+.compteurs-group,
+.btn-group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2em auto;
+  width: 70%;
+}
+
+p {
+  text-align: center;
+}
+
+/* COMPTEURS-GROUP */
+.work,
+.repos {
+  padding: 2em 5em;
+  box-shadow: 0 1px 5px #333;
+}
+
+.work {
+  background-image: linear-gradient(310deg, rgba(131, 131, 131, 0.02) 0%, rgba(131, 131, 131, 0.02) 13%, transparent 13%, transparent 46%, rgba(112, 112, 112, 0.02) 46%, rgba(112, 112, 112, 0.02) 100%), linear-gradient(21deg, rgba(18, 18, 18, 0.02) 0%, rgba(18, 18, 18, 0.02) 47%, transparent 47%, transparent 82%, rgba(178, 178, 178, 0.02) 82%, rgba(178, 178, 178, 0.02) 100%), linear-gradient(90deg, rgb(255, 255, 255), rgb(255, 255, 255));
+}
+
+.repos {
+  background-image: linear-gradient(297deg, transparent 0%, transparent 34%, rgba(178, 178, 178, 0.02) 34%, rgba(178, 178, 178, 0.02) 53%, transparent 53%, transparent 100%), linear-gradient(222deg, transparent 0%, transparent 30%, rgba(8, 8, 8, 0.02) 30%, rgba(8, 8, 8, 0.02) 58%, transparent 58%, transparent 100%), linear-gradient(352deg, transparent 0%, transparent 25%, rgba(88, 88, 88, 0.02) 25%, rgba(88, 88, 88, 0.02) 57%, transparent 57%, transparent 100%), linear-gradient(90deg, rgb(255, 255, 255), rgb(255, 255, 255));
+  margin-left: 1em;
+}
+
+.active-time {
+  background-image: radial-gradient(circle at center center, rgb(192, 239, 210), rgb(47, 129, 239));
+}
+
+.work p,
+.repos p {
+  font-size: 1.5rem;
+}
+
+/* BTN-GROUP */
+.btn-group button {
+  border: 0;
+  outline: 0;
+  padding: 1em 4em;
+  border-radius: 9999px;
+  box-shadow: 0 1px 5px 1px #333;
+  margin: 2em 0;
+}
+
+.btn-group button:hover {
+  cursor: pointer;
+  box-shadow: 0 1px 2px 0px #333;
+}
+
+.btn-group button:active {
+  bottom: 3px;
+  box-shadow: none;
+}
+
+.btn-group button:not(:first-child) {
+  margin-left: 1em;
+}
+
+.start {
+  background-color: rgba(34, 213, 85, 1.0);
+}
+
+.pause {
+  background-color: orange;
+}
+
+.pause img,
+.start img,
+.reset img {
+  height: 30px;
+}
+
+.reset {
+  background-color: lightgray;
+}
+
+/* INFOS-GROUP */
+.infos-group {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.infos-group h3 {
+  font-family: 'Bebas Neue';
+  font-size: 1.5rem;
+}
+
+.infos-group hr {
+  border: 1px solid crimson;
+}
+
+.infos-group p {
+  font-size: 2.5rem;
+  /* font-family: 'Bebas Neue'; */
+  /* transition: all .3s ease-in-out; */
+}
+
+.infos-group p:first-child {
+  margin: 1em;
+}
+
+.active-cpt {
+  animation: cpt 1.6s linear;
+}
+
+@keyframes cpt {
+  0% {
+    opacity: .7;
+    transform: scale(1);
+  }
+
+  30% {
+    opacity: 1;
+    transform: scale(3);
+    color: crimson;
+  }
+
+  60% {
+    transform: scale(1.5);
+    color: orange;
+  }
+
+  100% {
+    opacity: .7;
+    transform: scale(1);
+  }
+}
+
+/* Media queries */
+@media screen and (max-width:767px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  /* Compteur-group */
+  .work p,
+  .repos p {
+    font-size: 1.5rem;
+  }
+
+  .compteurs-group {
+    flex-direction: column;
+    margin-bottom: 1em;
+  }
+
+  .work,
+  .repos {
+    width: 100%;
+    margin: .5em auto;
+    padding: 1em;
+  }
+
+  /* btn-group */
+  .btn-group {
+    width: 100%;
+    margin: 0 0 1rem 0;
+  }
+
+  .btn-group button {
+    padding: 0.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .btn-group button:not(:first-child) {
+    margin-left: 2rem;
+  }
+
+  /* infos-group */
+  .infos-group h3 {
+    font-weight: 400;
+  }
+
+  .infos-group hr {
+    border: 1px solid crimson;
+    width: 90%;
+  }
+
+  .cycles {
+    font-size: 4rem;
+  }
+}

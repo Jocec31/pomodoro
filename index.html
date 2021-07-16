@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Pomodoro</title>
+</head>
+<header>
+    <h1>POMODORO</h1>
+</header>
+<main class="container">
+    <div class="compteurs-group">
+        <div class="work">
+            <h3>Travail</h3>
+            <hr>
+            <p></p>
+        </div>
+        <div class="repos">
+            <h3>Repos</h3>
+            <hr>
+            <p></p>
+        </div>
+    </div>
+    <div class="btn-group">
+        <button type="button" class="start"><img src="./ressources/timer.png" alt="icône d'un chrono"></button>
+        <button type="button" class="pause"><img src="./ressources/pause.png" alt="icône de la mise en pause du timer"></button>
+        <button type="button" class="reset"><img src="./ressources/reset.png" alt="icône de reset du chrono"></button>
+    </div>
+    <div class="infos-group">
+        <h3>Nombre de cycles</h3>
+        <hr>
+        <p class="cycles"></p>
+    </div>
+</main>
+
+<body>
+    <script src="app.js"></script>
+</body>
+
+</html>
