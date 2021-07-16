@@ -49,7 +49,6 @@ cycles.innerText = cptCycles;
 // 2 - démrrage du timer au clic sur start
 btnStart.addEventListener('click', () => {
   
-    work.classList.add('active-time');
     pause = false
     imgPlayPause.setAttribute('src', './ressources/pause.png');
 
@@ -58,8 +57,9 @@ btnStart.addEventListener('click', () => {
         cycles.classList.remove('active-cpt');
         tempsinitialTravail--;
         time(pWork, tempsinitialTravail);
+        work.classList.add('active-time');
         let timer = setInterval(() => {
-
+            
             if (pause === false && tempsinitialTravail > 0) {
                 cycles.classList.remove('active-cpt');
                 repos.classList.remove('active-time');
